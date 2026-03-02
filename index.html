@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <a class="library" onclick="selectIcon(this, '.library')"
+        ><img src="./assets/icons/header/library.png" alt="library" /> My
+        Library</a
+      >
+      <nav class="navigation">
+        <a class="home" onclick="selectIcon(this, '.navigation a')"
+          ><img src="./assets/icons/header/home.png" alt="Home" />Home</a
+        >
+        <a class="discover" onclick="selectIcon(this, '.navigation a')"
+          ><img
+            src="./assets/icons/header/discover.png"
+            alt="Discover"
+          />Discover</a
+        >
+        <a class="search" onclick="selectIcon(this, '.navigation a')"
+          ><img src="./assets/icons/header/search.png" alt="Search" />Search</a
+        >
+      </nav>
+      <ul class="top-buttons">
+        <li>
+          <img
+            src="/assets/icons/header/notification.png"
+            alt="notifications"
+          />
+        </li>
+        <li><img src="/assets/icons/header/private.png" alt="private" /></li>
+        <li class="friends">
+          <img src="/assets/icons/header/friends.png" alt="friends" />
+        </li>
+        <li><img src="/assets/icons/header/settings.png" alt="settings" /></li>
+        <li>
+          <img
+            src="/assets/icons/header/light-dark-mode.png"
+            alt="light-dark-mode"
+          />
+        </li>
+      </ul>
     </header>
     <main><aside></aside></main>
     <footer></footer>
