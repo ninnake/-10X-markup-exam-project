@@ -1,9 +1,14 @@
 @use "./homepage/header.scss";
 @use "./homepage/aside";
+@use "./homepage/mainbox.scss";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
 }
 .test {
   height: 1090px;

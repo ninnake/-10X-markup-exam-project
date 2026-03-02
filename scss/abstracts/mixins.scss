@@ -7,3 +7,21 @@
   font-family: $main-font;
   font-size: $font-size-primary;
 }
+@mixin list-title-style {
+  color: $list-title-color;
+  font-size: $list-title-size;
+  font-family: $main-font;
+  margin: 20px 20px;
+  font-weight: $font-weight-bold;
+}
+@mixin podcasts-box($color) {
+  background-color: rgba($color, 0.05);
+  border-radius: 5px;
+  border-left: 4px solid rgba($color, 0.6);
+  padding-left: 10px;
+}
+@mixin episodes-box($color) {
+  background-color: rgba($color, 0.05);
+  border-radius: 5px;
+  padding-left: 10px;
+}

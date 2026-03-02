@@ -79,6 +79,12 @@ header a:hover {
   justify-content: space-between;
   align-items: center;
 }
+.top-buttons li img {
+  transition: filter 0.3s linear;
+}
+.top-buttons li:hover img {
+  filter: brightness(1.5);
+}
 .top-buttons .friends:hover img {
   content: url("/assets/icons/header/selected/friends.png");
 }
@@ -96,6 +102,9 @@ header a:hover {
   color: #898989;
   padding: 5px 10px;
   transition: color 0.3s linear;
+}
+.sidebar li img {
+  transition: filter 0.3s linear;
 }
 .sidebar li:hover {
   color: #e0e0e0;
@@ -132,10 +141,177 @@ header a:hover {
   background-color: #111111;
 }
 
+main {
+  height: 100vh;
+  width: 85vw;
+  margin-left: 15vw;
+  padding-top: 55px;
+  background-color: #060606;
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+  width: 99.5%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 3px solid #111111;
+}
+
+.menu-buttons {
+  padding: 20px 20px;
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.menu-buttons ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.menu-buttons a {
+  color: #e0e0e0;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background-color: #111111;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+.menu-buttons a:hover {
+  background-color: #e0e0e0;
+  color: #111111;
+}
+.menu-buttons img {
+  margin-left: auto;
+}
+
+.list-title {
+  color: #e0e0e0;
+  font-size: 20px;
+  font-family: "Satoshi", sans-serif;
+  margin: 20px 20px;
+  font-weight: 700;
+}
+
+.list-title-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-title-line ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-right: 20px;
+}
+.list-title-line ul li img {
+  transition: filter 0.3s linear;
+}
+.list-title-line ul li:hover img {
+  filter: brightness(1.5);
+}
+
+.cataloge {
+  display: flex;
+  padding: 20px 20px;
+  gap: 10px;
+  list-style: none;
+}
+.cataloge img {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+  transition: opacity 0.3s linear;
+}
+
+.album-description {
+  padding-top: 5px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.album-description h3 {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #e0e0e0;
+  letter-spacing: 3%;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  transition: filter 0.3s linear;
+}
+.album-description p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #898989;
+  font-family: "Satoshi", sans-serif;
+  width: 95%;
+  transition: filter 0.3s linear;
+}
+
+.cataloge li:hover img {
+  opacity: 0.7;
+}
+.cataloge li:hover p,
+.cataloge li:hover h3 {
+  filter: brightness(1.9);
+}
+
+.favorite-artists img {
+  border-radius: 121px;
+}
+.favorite-artists h3 {
+  text-align: center;
+}
+
+.audiobooks-foru .cataloge img {
+  height: 220px;
+}
+
+.podcasts-foru .cataloge li:first-child div {
+  background-color: rgba(133, 197, 133, 0.05);
+  border-radius: 5px;
+  border-left: 4px solid rgba(133, 197, 133, 0.6);
+  padding-left: 10px;
+}
+.podcasts-foru .cataloge li:last-child div {
+  background-color: rgba(246, 125, 77, 0.05);
+  border-radius: 5px;
+  border-left: 4px solid rgba(246, 125, 77, 0.6);
+  padding-left: 10px;
+}
+.podcasts-foru .cataloge li:nth-child(2) div {
+  background-color: rgba(241, 206, 188, 0.05);
+  border-radius: 5px;
+  border-left: 4px solid rgba(241, 206, 188, 0.6);
+  padding-left: 10px;
+}
+
+.episodes-foru .cataloge li:first-child div {
+  background-color: rgba(133, 197, 133, 0.05);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.episodes-foru .cataloge li:last-child div {
+  background-color: rgba(246, 125, 77, 0.05);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.episodes-foru .cataloge li:nth-child(2) div {
+  background-color: rgba(241, 206, 188, 0.05);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .test {

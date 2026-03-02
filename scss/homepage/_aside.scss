@@ -13,6 +13,10 @@
     color: $menu-text-primary;
     padding: 5px 10px;
     transition: color 0.3s linear;
+    img {
+      transition: filter 0.3s linear;
+    }
+
     &:hover {
       color: $menu-text-hover;
       img {

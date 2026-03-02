@@ -89,6 +89,17 @@ header {
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  li {
+    img {
+      transition: filter 0.3s linear;
+    }
+
+    &:hover {
+      img {
+        filter: brightness(1.5);
+      }
+    }
+  }
   .friends {
     &:hover {
       img {
