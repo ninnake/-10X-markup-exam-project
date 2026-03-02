@@ -1,6 +1,10 @@
 @use "./homepage/header.scss";
+@use "./homepage/aside";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.test {
+  height: 1090px;
 }

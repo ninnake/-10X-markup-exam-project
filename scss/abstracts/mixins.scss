@@ -1,0 +1,9 @@
+@use "../abstracts/variables.scss" as *;
+@mixin hover-selected-style {
+  color: $menu-text-hover;
+  background-color: $hover-background-color;
+}
+@mixin font-style {
+  font-family: $main-font;
+  font-size: $font-size-primary;
+}
