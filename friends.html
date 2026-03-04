@@ -11,8 +11,8 @@
   <body>
     <header>
       <nav class="navigation">
-        <a class="home" onclick="selectIcon(this, '.navigation a')"
-          ><img src="./assets/icons/header/home.png" alt="Home" />Home</a
+        <a class="home home-active" onclick="selectIcon(this, '.navigation a')"
+          ><img src="./assets/icons/header/selected/home.png" alt="Home" />Home</a
         >
         <a class="discover" onclick="selectIcon(this, '.navigation a')"
           ><img
@@ -20,7 +20,7 @@
             alt="Discover"
           />Discover</a
         >
-        <a class="search" onclick="selectIcon(this, '.navigation a')"
+        <a href="/search.html" class="search" onclick="selectIcon(this, '.navigation a')"
           ><img src="./assets/icons/header/search.png" alt="Search" />Search</a
         >
       </nav>

@@ -2,12 +2,13 @@
 
 @use "../abstracts/mixins.scss" as *;
 header {
+  z-index: 20;
   position: fixed;
   width: 100%;
   background-color: $bg-main;
   display: grid;
-  right: 2.5vw;
-  grid-template-columns: 17.5vw 1fr 15vw;
+  right: 1vw;
+  grid-template-columns: 16vw 1fr 15vw;
   grid-template-rows: 55px;
   align-items: center;
   a {
@@ -112,5 +113,13 @@ header {
         background-color: $bg-main;
       }
     }
+  }
+}
+.home-active {
+  background-color: $hover-background-color;
+  @if $hover-background-color == #323232 {
+    color: $menu-text-hover;
+  } @else {
+    color: $menu-text-primary;
   }
 }

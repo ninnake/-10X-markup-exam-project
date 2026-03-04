@@ -43,3 +43,30 @@ playBtn.addEventListener("click", () => {
     player.classList.remove("active");
   }
 });
+//for search section color rendomize
+
+const colors = [
+  " #006450",
+  "#1e3264",
+  "#503750",
+  "#8d67ab",
+  "#0d73ec",
+  "#27856a",
+  "#e8115b",
+  "#e41d63",
+  "#eb1e32",
+  "#777777",
+  "#d84000",
+  "#537aa1",
+  "#148a08",
+  "#e91429",
+  "#ba5d07",
+  "#b02897",
+];
+
+document.querySelectorAll(".color-box").forEach((box) => {
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+  box.style.backgroundColor = randomColor;
+  box.style.setProperty("--card-color", randomColor);
+});

@@ -1,6 +1,7 @@
 @use "../abstracts/variables.scss" as *;
 @use "../abstracts/mixins.scss" as *;
 .player {
+  z-index: 20;
   background-color: $player-bg;
   width: 83.5vw;
   height: 80px;

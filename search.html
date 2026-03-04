@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <a
+          href="/index.html"
+          class="home"
+          onclick="selectIcon(this, '.navigation a')"
+          ><img src="./assets/icons/header/home.png" alt="Home" />Home</a
+        >
+        <a class="discover" onclick="selectIcon(this, '.navigation a')"
+          ><img
+            src="./assets/icons/header/discover.png"
+            alt="Discover"
+          />Discover</a
+        >
+        <a
+          href="/search.html"
+          class="search search-active"
+          onclick="selectIcon(this, '.navigation a')"
+          ><img
+            src="./assets/icons/header/selected/search.png"
+            alt="Search"
+          />Search</a
+        >
+      </nav>
+      <ul class="top-buttons">
+        <li>
+          <img
+            src="/assets/icons/header/notification.png"
+            alt="notifications"
+          />
+        </li>
+        <li><img src="/assets/icons/header/private.png" alt="private" /></li>
+        <li class="friends">
+          <a href="friends.html"
+            ><img src="/assets/icons/header/friends.png" alt="friends"
+          /></a>
+        </li>
+        <li><img src="/assets/icons/header/settings.png" alt="settings" /></li>
+        <li>
+          <img
+            src="/assets/icons/header/light-dark-mode.png"
+            alt="light-dark-mode"
+          />
+        </li>
+      </ul>
+    </header>
+    <aside class="sidebar">
+      <ul class="sidebar-wrapper">
+        <li>
+          <a class="library"
+            ><img src="./assets/icons/header/library.png" alt="library" /> My
+            Library</a
+          >
+        </li>
+        <li>
+          <a><img src="/assets/icons/sidebar/pins.png" alt="pins" /> Pins</a
+          ><img
+            class="arrow-icon"
+            src="assets/icons/sidebar/arrow.png"
+            alt="arrow-icon"
+          />
+        </li>
+        <li>
+          <a>
+            <img
+              src="/assets/icons/sidebar/playlists.png"
+              alt="Playlists"
+            />Playlists</a
+          ><img
+            class="arrow-icon"
+            src="assets/icons/sidebar/arrow.png"
+            alt="arrow-icon"
+          />
+        </li>
+        <li>
+          <a>
+            <img src="assets/icons/sidebar/liked-songs.png" alt="liked songs" />
+            Liked songs</a
+          >
+        </li>
+        <li>
+          <a> <img src="assets/icons/sidebar/saves.png" alt="Saves" /> Saves</a>
+        </li>
+        <li>
+          <a>
+            <img src="assets/icons/sidebar/albums.png" alt="Albums" />
+            Albums</a
+          >
+        </li>
+        <li>
+          <a>
+            <img
+              src="assets/icons/sidebar/folders.png"
+              alt="Folders"
+            />Folders</a
+          >
+        </li>
+        <li>
+          <a>
+            <img src="assets/icons/sidebar/podcasts.png" alt="Podcasts" />
+            Podcasts</a
+          >
+        </li>
+        <li>
+          <a>
+            <img src="assets/icons/sidebar/audiobooks.png" alt="Audiobooks" />
+            Audiobooks</a
+          >
+        </li>
+        <li>
+          <a>
+            <img
+              src="assets/icons/sidebar/artists.png"
+              alt="Artists"
+            />Artists</a
+          >
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <div class="main-wrapper">
+        <section class="resent-searches">
+          <div class="list-title-line">
+            <h2 class="list-title">Recent searches</h2>
+
+            <img src="/assets/icons/maincontent/dots.png" alt="dots" />
+          </div>
+
+          <ul class="research-cataloge">
+            <li>
+              <div>
+                <img class="" src="assets/images/search/daft-punk.png" />
+                <div class="cancel-icon">
+                  <img src="assets/images/search/cancel-icon.png" />
+                </div>
+                <span>Daft Punk</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="assets/images/search/david bowie.png" />
+                <div class="cancel-icon">
+                  <img src="assets/images/search/cancel-icon.png" />
+                </div>
+                <span>David Bowie</span>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="assets/images/search/muse.png" />
+                <div class="cancel-icon">
+                  <img src="assets/images/search/cancel-icon.png" />
+                </div>
+                <span>Black Holes...</span>
+                <p>Muse</p>
+              </div>
+            </li>
+          </ul>
+          <h2 class="list-title">Browse all</h2>
+        </section>
+
+        <section class="slider-section search-discover">
+          <div class="list-title-line">
+            <h4 class="list-title">Discover</h4>
+            <ul>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/left-arrow.png"
+                  alt="left-arrow"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/right-arrow.png"
+                  alt="right-arrow"
+                />
+              </li>
+              <li>
+                <img src="/assets/icons/maincontent/dots.png" alt="dots" />
+              </li>
+            </ul>
+          </div>
+          <ul class="cataloge">
+            <li class="color-box">
+              <div>
+                <h3 class="search-title">Made For You</h3>
+                <img
+                  src="assets/images/search/made-foru.png"
+                  alt="made for u"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3 class="search-title">New Releases</h3>
+                <img
+                  src="assets/images/search/new-releases.png"
+                  alt="new releases"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3 class="search-title">Spotify Classics</h3>
+                <img
+                  src="assets/images/search/spotify-classics.png"
+                  alt="spotify classics"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Charts</h3>
+                <img src="assets/images/search/chartes.png" alt="charset" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Trending</h3>
+                <img src="assets/images/search/trending.png" alt="Trending" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Discover</h3>
+                <img src="assets/images/search/discover.png" alt="discover" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Spotify Singles</h3>
+                <img
+                  src="assets/images/search/spotify-singles.png"
+                  alt="spotify singles"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Decades</h3>
+                <img src="assets/images/search/decades.png" alt="decades" />
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="search-genres slider-section">
+          <div class="list-title-line">
+            <h4 class="list-title">Genres</h4>
+            <ul>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/left-arrow.png"
+                  alt="left arrow"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/right-arrow.png"
+                  alt="right arrow"
+                />
+              </li>
+              <li>
+                <img src="/assets/icons/maincontent/dots.png" alt="dots" />
+              </li>
+            </ul>
+          </div>
+
+          <ul class="cataloge">
+            <li class="color-box">
+              <div>
+                <h3>Pop</h3>
+                <img src="assets/images/search/pop.png" alt="Pop" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Country</h3>
+                <img src="assets/images/search/country.png" alt="country" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Hip Hop</h3>
+                <img src="assets/images/search/hip-hop.png" alt="hip hop" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Rock</h3>
+                <img src="assets/images/search/rock.png" alt="rock" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Indie</h3>
+                <img src="assets/images/search/indie.png" alt="indie" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Punk</h3>
+                <img src="assets/images/search/punk.png" alt="punk" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Metal</h3>
+                <img src="assets/images/search/metal.png" alt="metal" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Instrumental</h3>
+                <img
+                  src="assets/images/search/instrumental.png"
+                  alt="instrumental"
+                />
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="search-mood slider-section">
+          <div class="list-title-line">
+            <h4 class="list-title">Mood & Activity</h4>
+            <ul>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/left-arrow.png"
+                  alt="left arrow"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/right-arrow.png"
+                  alt="right arrow"
+                />
+              </li>
+              <li>
+                <img src="/assets/icons/maincontent/dots.png" alt="dots" />
+              </li>
+            </ul>
+          </div>
+
+          <ul class="cataloge">
+            <li class="color-box">
+              <div>
+                <h3>In the car</h3>
+                <img
+                  src="assets/images/search/in-the-car.png"
+                  alt="in the car"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Mood</h3>
+                <img src="assets/images/search/mood.png" alt="mood" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Workout</h3>
+                <img src="assets/images/search/workout.png" alt="workout" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Chill</h3>
+                <img src="assets/images/search/chill.png" alt="chill" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Sleep</h3>
+                <img src="assets/images/search/sleep.png" alt="sleep" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Party</h3>
+                <img src="assets/images/search/party.png" alt="party" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>At Home</h3>
+                <img src="assets/images/search/at-home.png" alt="at home" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Focus</h3>
+                <img src="assets/images/search/focus.png" alt="focus" />
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="search-entertainment">
+          <div class="list-title-line">
+            <h4 class="list-title">Entertainment</h4>
+            <ul>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/left-arrow.png"
+                  alt="left arrow"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/right-arrow.png"
+                  alt="right arrow"
+                />
+              </li>
+              <li>
+                <img src="/assets/icons/maincontent/dots.png" alt="dots" />
+              </li>
+            </ul>
+          </div>
+
+          <ul class="cataloge">
+            <li class="color-box">
+              <div>
+                <h3>Netflix</h3>
+                <img src="assets/images/search/netflix.png" alt="netflix" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Anime</h3>
+                <img src="assets/images/search/anime.png" alt="anime" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Disney</h3>
+                <img src="assets/images/search/disney.png" alt="disney" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Gaming</h3>
+                <img src="assets/images/search/gaming.png" alt="gaming" />
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="search-podcasts">
+          <div class="list-title-line">
+            <h4 class="list-title">Podcasts</h4>
+            <ul>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/left-arrow.png"
+                  alt="left-arrow"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/right-arrow.png"
+                  alt="right-arrow"
+                />
+              </li>
+              <li>
+                <img src="/assets/icons/maincontent/dots.png" alt="dots" />
+              </li>
+            </ul>
+          </div>
+
+          <ul class="cataloge">
+            <li class="color-box">
+              <div>
+                <h3>Podcasts</h3>
+                <img src="assets/images/search/podcasts.png" alt="podcasts" />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Podcast Charts</h3>
+                <img
+                  src="assets/images/search/podcats-charts.png"
+                  alt="podcasts charts"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Podcast New Releases</h3>
+                <img
+                  src="assets/images/search/podcast-new-releasese.png"
+                  alt="podcast new releases"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Video</h3>
+                <img src="assets/images/search/video.png" alt="video" />
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="search-audiobooks">
+          <div class="list-title-line">
+            <h4 class="list-title">Audiobooks</h4>
+            <ul>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/left-arrow.png"
+                  alt="left-arrow"
+                />
+              </li>
+              <li>
+                <img
+                  src="/assets/icons/maincontent/right-arrow.png"
+                  alt="right-arrow"
+                />
+              </li>
+              <li>
+                <img src="/assets/icons/maincontent/dots.png" alt="dots" />
+              </li>
+            </ul>
+          </div>
+
+          <ul class="cataloge">
+            <li class="color-box">
+              <div>
+                <h3>Audiobooks</h3>
+                <img
+                  src="assets/images/search/audiobooks.png"
+                  alt="audiobooks"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Sci-Fi & Fantasy Essentials</h3>
+                <img
+                  src="assets/images/search/sci-fi-fantasy.png"
+                  alt="sci-fi and fantasy essentials"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Fiction & Literature</h3>
+                <img
+                  src="assets/images/search/fiction-literature.png"
+                  alt="fiction and literature"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Mystery & Thriller</h3>
+                <img
+                  src="assets/images/search/mystery-thriller.png"
+                  alt="mystery and thriller"
+                />
+              </div>
+            </li>
+            <li class="color-box">
+              <div>
+                <h3>Self-Help</h3>
+                <img src="assets/images/search/self-help.png" alt="self help" />
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="player">
+        <div class="audio-settings">
+          <button id="playBtn">
+            <img src="/assets/icons/player/player-pause.png" alt="Play" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-leftarrow.png" alt="Prev" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-rightarrow.png" alt="Next" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-shuffle.png" alt="Shuffle" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-repeat.png" alt="Repeat" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-timer.png" alt="timer" />
+          </button>
+
+          <audio
+            id="audio"
+            src="Jefferson-Airplane-White-Rabbit-_Official-Audio_.mp3"
+          ></audio>
+
+          <button>
+            <img src="/assets/icons/player/player-sound.png" alt="Volume" />
+          </button>
+        </div>
+
+        <div class="player-song">
+          <div class="player-song-cover">
+            <img src="assets/images/player/white-rabbit.jpeg" />
+            <div>
+              <h4>White Rabbit</h4>
+              <p>Jefferson Airplane</p>
+            </div>
+          </div>
+          <div class="player-song-buttons">
+            <button>
+              <img
+                src="/assets/icons/player/player-like.png"
+                alt="add to liked songs"
+              />
+            </button>
+            <button>
+              <img
+                src="assets/icons/player/player-add.png"
+                alt="add music to your album"
+              />
+            </button>
+            <button>
+              <img src="assets/icons/player/player-lyrics.png" alt="lyrics" />
+            </button>
+            <button>
+              <img src="assets/icons/player/player-pc.png" alt="pc" />
+            </button>
+            <button>
+              <img src="assets/icons/player/player-more.png" alt="more" />
+            </button>
+          </div>
+        </div>
+        <div class="player-last-section">
+          <button>
+            <img alt="" src="assets/icons/player/player-line.png" />
+          </button>
+          <button>
+            <img alt="" src="assets/icons/player/player-dj.png" />
+          </button>
+          <button>
+            <img alt="" src="assets/icons/player/player-queue.png" />
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
