@@ -3,7 +3,8 @@ header {
   width: 100%;
   background-color: #060606;
   display: grid;
-  grid-template-columns: 15vw 1fr 15vw;
+  right: 2.5vw;
+  grid-template-columns: 17.5vw 1fr 15vw;
   grid-template-rows: 55px;
   align-items: center;
 }
@@ -85,8 +86,14 @@ header a:hover {
 .top-buttons li:hover img {
   filter: brightness(1.5);
 }
+.top-buttons .friends a {
+  padding: 0 0;
+}
 .top-buttons .friends:hover img {
   content: url("/assets/icons/header/selected/friends.png");
+}
+.top-buttons .friends:hover a {
+  background-color: #060606;
 }
 
 .sidebar {
@@ -393,6 +400,76 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.main-wrapper-for-friends {
+  width: 60vw;
+  margin-left: 3px;
+  border-radius: 5px;
+  border: 3px solid #111111;
+  margin-bottom: 100px;
+}
+
+.right-aside {
+  width: 22vw;
+  border: 3px solid #111111;
+  border-radius: 5px;
+  height: calc(100vh - 155px);
+  position: fixed;
+  right: 2.5vw;
+  top: 55px;
+  font-family: "Satoshi", sans-serif;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+.friends-activity {
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.friends-activity-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.friends-activity-icons a img {
+  transition: filter 0.3s linear;
+}
+.friends-activity-icons a:hover img {
+  filter: brightness(1.5);
+}
+
+.friends-list ul {
+  margin: 30px 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.friends-list ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.friends-list ul li .friends-activity-description {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.friends-list h5 {
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+.friends-list p,
+.friends-list span {
+  font-size: 14px;
+  font-weight: 300;
+}
+.friends-list span {
+  color: #898989;
 }
 
 * {
