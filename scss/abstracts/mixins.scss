@@ -25,3 +25,12 @@
   border-radius: 5px;
   padding-left: 10px;
 }
+// button hovers
+@mixin button-hover-effect {
+  img {
+    filter: brightness(1.5);
+  }
+}
+@mixin button-hover-transition {
+  transition: filter 0.3s linear;
+}

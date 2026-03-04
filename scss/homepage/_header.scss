@@ -91,13 +91,11 @@ header {
   align-items: center;
   li {
     img {
-      transition: filter 0.3s linear;
+      @include button-hover-transition;
     }
 
     &:hover {
-      img {
-        filter: brightness(1.5);
-      }
+      @include button-hover-effect;
     }
   }
   .friends {

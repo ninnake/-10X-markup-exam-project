@@ -1,0 +1,82 @@
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/mixins.scss" as *;
+.player {
+  background-color: $player-bg;
+  width: 83.5vw;
+  height: 80px;
+  border-radius: 10px;
+  margin: 10px 2px;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 50% 40% 10%;
+  &.active {
+    background-color: $player-bg-active;
+    button {
+      background-color: $player-bg-active;
+      @include button-hover-effect;
+    }
+    #playBtn {
+      img {
+        content: url("/assets/icons/player/player-go.png");
+      }
+    }
+  }
+
+  button {
+    background-color: $player-bg;
+    border: none;
+    cursor: pointer;
+    img {
+      @include button-hover-transition;
+    }
+    &:hover {
+      @include button-hover-effect;
+    }
+  }
+}
+.audio-settings {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#playBtn {
+  img {
+    filter: none;
+  }
+}
+.player-song-cover {
+  font-family: $main-font;
+  font-size: $font-size-primary;
+  h4 {
+    color: $menu-text-hover;
+  }
+  p {
+    color: $menu-text-primary;
+  }
+  img {
+    width: 51px;
+    height: 51px;
+    border-radius: 5px;
+  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.player-song {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.player-last-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-song-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

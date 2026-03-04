@@ -6,6 +6,7 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script defer src="script.js"></script>
+   
   </head>
   <body>
     <header>
@@ -122,12 +123,12 @@
           <ul>
             <li><a href="#all">All</a></li>
             <li><a href="#music">Music</a></li>
-            <li><a href="#podcats">Podcasts</a></li>
+            <li><a href="#podcasts">Podcasts</a></li>
             <li><a href="#audiobooks">Audiobooks</a></li>
           </ul>
           <img src="assets/icons/header/switch.png" alt="switch" />
         </section>
-        <section class="made-foru" id="all">
+        <section class="slider-section made-foru" id="all">
           <div class="list-title-line">
             <h2 class="list-title">Made For You</h2>
             <ul>
@@ -274,7 +275,7 @@
           </ul>
         </section>
 
-        <section class="top-mixes">
+        <section class="slider-section top-mixes">
           <div class="list-title-line">
             <h2 class="list-title">Your top mixes</h2>
             <ul>
@@ -510,7 +511,7 @@
         </ul>
       </section>
        
-      <section class="podcasts-foru">
+      <section class="podcasts-foru" id="podcasts">
         <div class="list-title-line">
           <h2 class="list-title">Podcasts for you</h2>
           <ul>
@@ -579,7 +580,57 @@
         </ul>
       </section> 
       </div>
+      <section class="player">
+        <div class="audio-settings">
+    <button id="playBtn">
+      <img src="/assets/icons/player/player-pause.png" alt="Play">
+    </button>
+    <button>
+      <img src="/assets/icons/player/player-leftarrow.png" alt="Prev">
+    </button>
+    <button>
+      <img src="/assets/icons/player/player-rightarrow.png" alt="Next">
+    </button>
+    <button>
+      <img src="/assets/icons/player/player-shuffle.png" alt="Shuffle">
+    </button>
+    <button>
+      <img src="/assets/icons/player/player-repeat.png" alt="Repeat">
+    </button>
+     <button>
+      <img src="/assets/icons/player/player-timer.png" alt="timer">
+    </button>
+
+    <audio id="audio" src="Jefferson-Airplane-White-Rabbit-_Official-Audio_.mp3"></audio>
+
+    <button><img src="/assets/icons/player/player-sound.png" alt="Volume"></button>
+  </div>
+
+        
+        <div class="player-song">
+          
+<div class="player-song-cover"><img  src="assets/images/player/white-rabbit.jpeg">
+  <div ><h4>White Rabbit</h4>
+  <p>Jefferson Airplane</p></div>
+  
+</div>  
+<div class="player-song-buttons">
+<button><img src="/assets/icons/player/player-like.png" alt="add to liked songs"></button>
+<button><img src="assets/icons/player/player-add.png"alt="add music to your album"></button>       
+<button><img src="assets/icons/player/player-lyrics.png"alt="lyrics"></button>       
+<button><img src="assets/icons/player/player-pc.png"alt="pc"></button>       
+<button><img src="assets/icons/player/player-more.png"alt="more"></button>       
+ </div>
+        </div>
+        <div class="player-last-section">
+          <button><img alt="" src="assets/icons/player/player-line.png"></button>
+           <button><img alt="" src="assets/icons/player/player-dj.png"></button> 
+           <button><img alt="" src="assets/icons/player/player-queue.png"></button>
+        </div>
+      </section>
+
     </main>
     <footer></footer>
+     
   </body>
 </html>
