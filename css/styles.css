@@ -113,14 +113,12 @@ header a:hover {
   height: 45px;
   display: flex;
   align-items: center;
-  color: #898989;
   padding: 5px 10px;
-  transition: color 0.3s linear;
 }
 .sidebar li img {
   transition: filter 0.3s linear;
 }
-.sidebar li:hover {
+.sidebar li:hover a {
   color: #e0e0e0;
 }
 .sidebar li:hover img {
@@ -130,12 +128,14 @@ header a:hover {
   justify-self: end;
 }
 .sidebar li a {
+  transition: color 0.3s linear;
   width: calc(15vw - 10px);
   font-family: "Satoshi", sans-serif;
   font-size: 14px;
   display: flex;
   align-items: center;
   gap: 10px;
+  color: #898989;
 }
 
 .sidebar-wrapper {
@@ -188,7 +188,6 @@ main {
   color: #e0e0e0;
   padding: 8px 15px;
   border-radius: 8px;
-  background-color: #111111;
   transition: background-color 0.3s linear, color 0.3s linear;
 }
 .menu-buttons a:hover {
@@ -267,6 +266,11 @@ main {
   font-family: "Satoshi", sans-serif;
   width: 95%;
   transition: filter 0.3s linear;
+}
+
+.all-active a {
+  background-color: #e0e0e0;
+  color: #111111;
 }
 
 .cataloge li:hover img {
@@ -601,6 +605,100 @@ main {
 }
 .cancel-icon:hover {
   filter: brightness(1.5);
+}
+
+.menu-buttons-library {
+  padding: 20px 20px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.menu-buttons-library li {
+  display: flex;
+  align-items: center;
+  transition: filter 0.3s linear;
+}
+.menu-buttons-library li:hover {
+  filter: brightness(1.5);
+}
+.menu-buttons-library span {
+  color: #898989;
+  font-size: 14px;
+  font-family: "Satoshi", sans-serif;
+}
+.menu-buttons-library .add-icon {
+  margin-left: auto;
+}
+
+.sidebar-active {
+  background-color: #111111;
+}
+
+.library-cataloge-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  gap: 8px;
+  row-gap: 50px;
+  list-style: none;
+}
+.library-cataloge-list img {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+  transition: opacity 0.3s linear;
+}
+.library-cataloge-list .pin-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.library-cataloge-list-card h3 {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #e0e0e0;
+  letter-spacing: 3%;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 500;
+  transition: filter 0.3s linear;
+}
+.library-cataloge-list-card p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #898989;
+  font-family: "Satoshi", sans-serif;
+  width: 95%;
+  transition: filter 0.3s linear;
+}
+.library-cataloge-list-card {
+  width: 170px;
+  position: relative;
+}
+.library-cataloge-list-card .pin-icon {
+  position: absolute;
+  top: -7px;
+  right: 0;
+  transition: rotate 0.3s linear;
+}
+.library-cataloge-list-card:hover h3,
+.library-cataloge-list-card:hover p {
+  filter: brightness(1.5);
+}
+.library-cataloge-list-card:hover .pin-icon {
+  rotate: -45deg;
+  opacity: 1;
+}
+.library-cataloge-list-card:hover img {
+  opacity: 0.8;
+}
+
+.round-card img {
+  border-radius: 121px;
+}
+.round-card h3 {
+  text-align: center;
 }
 
 * {

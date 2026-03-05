@@ -30,7 +30,7 @@ main {
     color: $menu-text-hover;
     padding: 8px 15px;
     border-radius: 8px;
-    background-color: $hover-background-color;
+
     transition:
       background-color 0.3s linear,
       color 0.3s linear;
@@ -109,6 +109,12 @@ main {
     font-family: $main-font;
     width: 95%;
     transition: filter 0.3s linear;
+  }
+}
+.all-active {
+  a {
+    background-color: $menu-text-hover;
+    color: #111111;
   }
 }
 .cataloge {

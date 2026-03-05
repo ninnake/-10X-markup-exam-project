@@ -11,15 +11,18 @@
     height: 45px;
     display: flex;
     align-items: center;
-    color: $menu-text-primary;
+
     padding: 5px 10px;
-    transition: color 0.3s linear;
+
     img {
       transition: filter 0.3s linear;
     }
 
     &:hover {
-      color: $menu-text-hover;
+      a {
+        color: $menu-text-hover;
+      }
+
       img {
         filter: brightness(1.5);
       }
@@ -28,11 +31,13 @@
       justify-self: end;
     }
     a {
+      transition: color 0.3s linear;
       width: calc(15vw - 10px);
       @include font-style;
       display: flex;
       align-items: center;
       gap: 10px;
+      color: $menu-text-primary;
     }
   }
 }
