@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <a
+          href="./index.html"
+          class="home"
+          onclick="selectIcon(this, '.navigation a')"
+          ><img src="./assets/icons/header/home.png" alt="Home" />Home</a
+        >
+        <a class="discover" onclick="selectIcon(this, '.navigation a')"
+          ><img
+            src="./assets/icons/header/discover.png"
+            alt="Discover"
+          />Discover</a
+        >
+        <a
+          href="/search.html"
+          class="search"
+          onclick="selectIcon(this, '.navigation a')"
+          ><img src="./assets/icons/header/search.png" alt="Search" />Search</a
+        >
+      </nav>
+      <ul class="top-buttons">
+        <li>
+          <img
+            src="/assets/icons/header/notification.png"
+            alt="notifications"
+          />
+        </li>
+        <li><img src="/assets/icons/header/private.png" alt="private" /></li>
+        <li class="friends">
+          <a href="friends.html"
+            ><img src="/assets/icons/header/friends.png" alt="friends"
+          /></a>
+        </li>
+        <li><img src="/assets/icons/header/settings.png" alt="settings" /></li>
+        <li>
+          <img
+            src="/assets/icons/header/light-dark-mode.png"
+            alt="light-dark-mode"
+          />
+        </li>
+      </ul>
+    </header>
+    <aside class="sidebar sidebar-active">
+      <ul class="sidebar-wrapper">
+        <li>
+          <a href="/library.html" class="library"
+            ><img
+              src="./assets/icons/library/library-liked/librari-non-active.png "
+              alt="library icon"
+            />
+            My Library</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img src="/assets/icons/sidebar/pins.png" alt="pins" /> Pins</a
+          ><img
+            class="arrow-icon"
+            src="assets/icons/sidebar/arrow.png"
+            alt="arrow-icon"
+          />
+        </li>
+        <li>
+          <a>
+            <img
+              src="/assets/icons/sidebar/playlists.png"
+              alt="Playlists"
+            />Playlists</a
+          ><img
+            class="arrow-icon"
+            src="assets/icons/sidebar/arrow.png"
+            alt="arrow-icon"
+          />
+        </li>
+        <li>
+          <a href="library-liked.html">
+            <img
+              src="assets/icons/library/library-liked/green-heart.png"
+              alt="liked songs"
+            />
+            Liked songs</a
+          >
+        </li>
+        <li>
+          <a> <img src="assets/icons/sidebar/saves.png" alt="Saves" /> Saves</a>
+        </li>
+        <li>
+          <a>
+            <img src="assets/icons/sidebar/albums.png" alt="Albums" />
+            Albums</a
+          >
+        </li>
+        <li>
+          <a>
+            <img
+              src="assets/icons/sidebar/folders.png"
+              alt="Folders"
+            />Folders</a
+          >
+        </li>
+        <li>
+          <a>
+            <img src="assets/icons/sidebar/podcasts.png" alt="Podcasts" />
+            Podcasts</a
+          >
+        </li>
+        <li>
+          <a>
+            <img src="assets/icons/sidebar/audiobooks.png" alt="Audiobooks" />
+            Audiobooks</a
+          >
+        </li>
+        <li>
+          <a>
+            <img
+              src="assets/icons/sidebar/artists.png"
+              alt="Artists"
+            />Artists</a
+          >
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <div class="main-wrapper">
+        <section>
+          <ul class="menu-buttons-library-liked">
+            <li class="liked-add-icon">
+              <img src="assets/icons/library/library-home/add.png" alt="add" />
+            </li>
+            <li>
+              <img
+                src="assets/icons/library/library-liked/list.png"
+                alt="list"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/icons/library/library-liked/view.png"
+                alt="view"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/icons/library/library-home/recent.png"
+                alt="recent"
+              /><span>Recent</span>
+            </li>
+            <li>
+              <img
+                src="assets/icons/library/library-home/group.png"
+                alt="filter"
+              /><span>Filter:All</span>
+            </li>
+            <li>
+              <img
+                src="assets/icons/library/library-home/search.png"
+                alt="search"
+              />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <table class="song-table">
+            <thead class="thead">
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <a
+                    ><img
+                      src="assets/images/library/library-liked/daft-punk.png"
+                      alt="daft-punk"
+                  /></a>
+                  <div>
+                    <a><h3>Get Lucky</h3></a>
+                    <a>Daft Punk</a>
+                  </div>
+                </td>
+                <td>
+                  <a><span>Random Access Memories</span></a>
+                </td>
+                <td><span>4:35</span></td>
+                <td>
+                  <img
+                    src="assets/icons/library/library-liked/green-heart.png"
+                    alt="green heart"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <a
+                    ><img
+                      src="assets/images/library/library-liked/daft-punk.png"
+                      alt="daft-punk"
+                  /></a>
+                  <div>
+                    <a> <h3>Instant Crush</h3></a>
+                    <a><span>Daft Punk,Julian Casablancas</span></a>
+                  </div>
+                </td>
+                <td>
+                  <a><span>Random Access Memories</span></a>
+                </td>
+                <td><span>5:37</span></td>
+                <td>
+                  <img
+                    src="assets/icons/library/library-liked/green-heart.png"
+                    alt="green heart"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <a
+                    ><img
+                      src="assets/images/library/library-liked/gorillaz.png"
+                      alt="gorillaz"
+                  /></a>
+                  <div>
+                    <a><h3>On Melancholy Hill</h3></a>
+                    <a> <span>Gorillaz</span></a>
+                  </div>
+                </td>
+                <td>
+                  <a><span>Plastic Beach</span></a>
+                </td>
+                <td><span>3:53</span></td>
+                <td>
+                  <img
+                    src="assets/icons/library/library-liked/green-heart.png"
+                    alt="green heart"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <a
+                    ><img
+                      src="assets/images/library/library-liked/soft-cell.png"
+                      alt="soft cell"
+                  /></a>
+                  <div>
+                    <a><h3>Trainted Love</h3></a> <a><span>Soft Cell</span></a>
+                  </div>
+                </td>
+                <td>
+                  <a><span>Non-Stop Erotic Cabaret</span></a>
+                </td>
+                <td><span>2:33</span></td>
+                <td>
+                  <img
+                    src="assets/icons/library/library-liked/green-heart.png"
+                    alt="green heart"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>
+                  <a
+                    ><img
+                      src="assets/images/library/library-liked/daft-punk-one-more-time.png"
+                      alt="daft punk"
+                  /></a>
+                  <div>
+                    <a><h3>One More Time</h3></a> <a><span>Daft Punk</span></a>
+                  </div>
+                </td>
+                <td>
+                  <a><span>Discovery</span></a>
+                </td>
+                <td><span>5:20</span></td>
+                <td>
+                  <img
+                    src="assets/icons/library/library-liked/green-heart.png"
+                    alt="green heart"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>
+                  <a
+                    ><img
+                      src="assets/images/library/library-liked/MGMT.png"
+                      alt="mgmt"
+                  /></a>
+                  <div>
+                    <a> <h3>Electric Fell</h3></a>
+                    <a> <span>MGMT</span></a>
+                  </div>
+                </td>
+                <td>
+                  <a><span>Oracular Spectacular</span></a>
+                </td>
+                <td><span>3:49</span></td>
+                <td>
+                  <img
+                    src="assets/icons/library/library-liked/green-heart.png"
+                    alt="green heart"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>
+                  <a
+                    ><img
+                      src="assets/images/library/library-liked/daft-punk.png"
+                      alt="daft-punk"
+                  /></a>
+                  <div>
+                    <a><h3>Give Life Back to Music</h3></a>
+                    <a><span>Daft Punk</span></a>
+                  </div>
+                </td>
+                <td>
+                  <a><span>Random Access Memories</span></a>
+                </td>
+                <td><span>4:35</span></td>
+                <td>
+                  <img
+                    src="assets/icons/library/library-liked/green-heart.png"
+                    alt="green heart"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <section class="player">
+        <div class="audio-settings">
+          <button id="playBtn">
+            <img src="/assets/icons/player/player-pause.png" alt="Play" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-leftarrow.png" alt="Prev" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-rightarrow.png" alt="Next" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-shuffle.png" alt="Shuffle" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-repeat.png" alt="Repeat" />
+          </button>
+          <button>
+            <img src="/assets/icons/player/player-timer.png" alt="timer" />
+          </button>
+
+          <audio
+            id="audio"
+            src="Jefferson-Airplane-White-Rabbit-_Official-Audio_.mp3"
+          ></audio>
+
+          <button>
+            <img src="/assets/icons/player/player-sound.png" alt="Volume" />
+          </button>
+        </div>
+
+        <div class="player-song">
+          <div class="player-song-cover">
+            <img
+              src="assets/images/player/white-rabbit.jpeg"
+              alt="white rabbit"
+            />
+            <div>
+              <h4>White Rabbit</h4>
+              <p>Jefferson Airplane</p>
+            </div>
+          </div>
+          <div class="player-song-buttons">
+            <button>
+              <img
+                src="/assets/icons/player/player-like.png"
+                alt="add to liked songs"
+              />
+            </button>
+            <button>
+              <img
+                src="assets/icons/player/player-add.png"
+                alt="add music to your album"
+              />
+            </button>
+            <button>
+              <img src="assets/icons/player/player-lyrics.png" alt="lyrics" />
+            </button>
+            <button>
+              <img src="assets/icons/player/player-pc.png" alt="pc" />
+            </button>
+            <button>
+              <img src="assets/icons/player/player-more.png" alt="more" />
+            </button>
+          </div>
+        </div>
+        <div class="player-last-section">
+          <button>
+            <img alt="" src="assets/icons/player/player-line.png" />
+          </button>
+          <button>
+            <img alt="" src="assets/icons/player/player-dj.png" />
+          </button>
+          <button>
+            <img alt="" src="assets/icons/player/player-queue.png" />
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

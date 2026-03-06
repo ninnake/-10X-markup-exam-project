@@ -607,7 +607,7 @@ main {
   filter: brightness(1.5);
 }
 
-.menu-buttons-library {
+.menu-buttons-library, .menu-buttons-library-liked {
   padding: 20px 20px;
   display: flex;
   list-style: none;
@@ -615,20 +615,20 @@ main {
   justify-content: flex-start;
   gap: 20px;
 }
-.menu-buttons-library li {
+.menu-buttons-library li, .menu-buttons-library-liked li {
   display: flex;
   align-items: center;
   transition: filter 0.3s linear;
 }
-.menu-buttons-library li:hover {
+.menu-buttons-library li:hover, .menu-buttons-library-liked li:hover {
   filter: brightness(1.5);
 }
-.menu-buttons-library span {
+.menu-buttons-library span, .menu-buttons-library-liked span {
   color: #898989;
   font-size: 14px;
   font-family: "Satoshi", sans-serif;
 }
-.menu-buttons-library .add-icon {
+.menu-buttons-library .add-icon, .menu-buttons-library-liked .add-icon {
   margin-left: auto;
 }
 
@@ -699,6 +699,28 @@ main {
 }
 .round-card h3 {
   text-align: center;
+}
+
+.menu-buttons-library-liked {
+  justify-content: flex-end;
+}
+.menu-buttons-library-liked .liked-add-icon {
+  margin-right: auto;
+}
+
+.thead {
+  border-bottom: 3px solid #898989;
+}
+.thead th {
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.song-table {
+  border-collapse: collapse;
+  margin: 50px 30px;
+  color: #898989;
+  font-family: "Satoshi", sans-serif;
 }
 
 * {
