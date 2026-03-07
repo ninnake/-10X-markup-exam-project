@@ -11,7 +11,13 @@
   }
 }
 .wrapper-for-discover {
-  background-color: rgba($bg-discover, 0.14);
+  background: linear-gradient(
+    to bottom,
+    rgba($bg-discover, 0.14),
+    rgba(rgb(149, 17, 190), 0.14),
+    rgba(rgb(255, 82, 2), 0.14),
+    rgba(rgb(36, 40, 97), 0.14)
+  );
 }
 .music-active {
   a {
