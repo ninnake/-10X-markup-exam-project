@@ -1,10 +1,10 @@
-function selectIcon(el, group) {
-  document
-    .querySelectorAll(group)
-    .forEach((box) => box.classList.remove("selected"));
+//function selectIcon(el, group) {
+//document
+//.querySelectorAll(group)
+//.forEach((box) => box.classList.remove("selected"));
 
-  el.classList.add("selected");
-}
+//el.classList.add("selected");
+//}
 const sections = document.querySelectorAll(".slider-section");
 
 sections.forEach((section) => {

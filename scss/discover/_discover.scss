@@ -1,0 +1,22 @@
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/mixins.scss" as *;
+.discover-active {
+  background-color: $hover-background-color;
+}
+.buttons-for-discover {
+  background-color: rgba($bg-main, 0.8);
+  a {
+    background-color: $hover-background-color;
+    color: $text-color-discover;
+  }
+}
+.wrapper-for-discover {
+  background-color: rgba($bg-discover, 0.14);
+  height: 900px;
+}
+.music-active {
+  a {
+    background-color: $menu-text-hover;
+    color: $music-button-color;
+  }
+}

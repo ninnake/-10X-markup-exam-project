@@ -6,13 +6,10 @@
 @use "./search/search";
 @use "./library/library.scss";
 @use "./library/library-likes.scss";
+@use "./discover/discover.scss";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-}
-
-.test {
-  height: 1090px;
 }

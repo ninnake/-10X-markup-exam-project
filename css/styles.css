@@ -756,15 +756,33 @@ main {
   border-spacing: 0 40px;
 }
 
+.discover-active {
+  background-color: #111111;
+}
+
+.buttons-for-discover {
+  background-color: rgba(6, 6, 6, 0.8);
+}
+.buttons-for-discover a {
+  background-color: #111111;
+  color: #e0e0e0;
+}
+
+.wrapper-for-discover {
+  background-color: rgba(140, 216, 204, 0.14);
+  height: 900px;
+}
+
+.music-active a {
+  background-color: #e0e0e0;
+  color: #1a1a1a;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-}
-
-.test {
-  height: 1090px;
 }
 
 /*# sourceMappingURL=styles.css.map */
