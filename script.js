@@ -70,3 +70,48 @@ document.querySelectorAll(".color-box").forEach((box) => {
   box.style.backgroundColor = randomColor;
   box.style.setProperty("--card-color", randomColor);
 });
+///
+///
+////
+document.addEventListener("DOMContentLoaded", () => {
+  const themes = document.querySelectorAll(".discover-theme");
+
+  const allImages = [
+    [
+      "assets/images/discover/linkin-park-theme.png",
+      "assets/images/discover/linkin-park-theme-2.png",
+    ],
+    [
+      "assets/images/discover/get-lucky.png",
+      "assets/images/discover/get-lucky-2.png",
+    ],
+    [
+      "assets/images/discover/psycho-killer.jpg",
+      "assets/images/discover/psycho-killer-2.jpg",
+    ],
+    [
+      "assets/images/discover/hip-hop.jpg",
+      "assets/images/discover/hip-hop-2.jpeg",
+    ],
+  ];
+
+  themes.forEach((theme, index) => {
+    const cover = theme.querySelector(".discover-theme-cover");
+    const arrows = theme.querySelectorAll(".theme-arrows img");
+    const images = allImages[index];
+    let currentIndex = 0;
+
+    arrows[0].addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      cover.src = images[currentIndex];
+    });
+
+    arrows[1].addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      cover.src = images[currentIndex];
+    });
+  });
+});
+///
+///
+///
