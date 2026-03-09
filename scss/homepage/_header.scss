@@ -123,3 +123,9 @@ header {
     color: $menu-text-primary;
   }
 }
+
+@media (max-width: 500px) {
+  header {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/mixins.scss" as *;
+@media (min-width: 500px) {
+  footer {
+    display: none;
+  }
+}
+.footer {
+  width: 100vw;
+  height: 95px;
+  background-image: linear-gradient(to bottom, rgba(#111111, 0.85), #111111);
+  position: fixed;
+  bottom: 0;
+}
+.footer-menu {
+  height: 95px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $ft-color;
+    font-size: $ft-font-size;
+    font-family: $main-font;
+  }
+}

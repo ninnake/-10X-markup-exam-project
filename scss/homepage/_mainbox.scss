@@ -182,3 +182,20 @@ main {
     }
   }
 }
+@media (max-width: 500px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0;
+    padding-top: 0;
+    background-color: $bg-main;
+    overflow-x: hidden;
+  }
+  .main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+    border: none;
+    margin-bottom: 0;
+  }
+}
