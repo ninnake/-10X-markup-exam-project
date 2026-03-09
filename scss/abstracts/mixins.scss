@@ -34,3 +34,9 @@
 @mixin button-hover-transition {
   transition: filter 0.3s linear;
 }
+@mixin flex($align, $justify, $gap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}

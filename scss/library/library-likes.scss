@@ -46,9 +46,7 @@
   }
 }
 .duration {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  @include flex(center, flex-start, 50px);
 }
 .main-wrapper {
   table {

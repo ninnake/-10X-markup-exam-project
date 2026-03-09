@@ -119,3 +119,53 @@
     filter: brightness(1.5);
   }
 }
+@media (max-width: 500px) {
+  .buttons-for-discover {
+    display: none;
+  }
+  .discover-cataloge {
+    li {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .discover-theme {
+    width: 195px;
+    height: 305px;
+    &-cover {
+      width: 195px;
+      height: 305px;
+    }
+  }
+  .theme-arrows {
+    width: 195px;
+    position: absolute;
+    bottom: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+  }
+  .discover-music-info {
+    width: 300px;
+    &-cover {
+      width: 100px;
+      height: 100px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+    &-text-button {
+      display: none;
+    }
+  }
+  .discover-music-buttons {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
