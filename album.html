@@ -45,14 +45,11 @@
         </li>
       </ul>
     </header>
-    <aside class="sidebar sidebar-active">
+    <aside class="sidebar">
       <ul class="sidebar-wrapper">
         <li>
           <a href="/library.html" class="library"
-            ><img
-              src="./assets/icons/library/library-liked/librari-non-active.png "
-              alt="library icon"
-            />
+            ><img src="./assets/icons/header/library.png " alt="library icon" />
             My Library</a
           >
         </li>
@@ -79,10 +76,7 @@
         </li>
         <li>
           <a href="library-liked.html">
-            <img
-              src="assets/icons/library/library-liked/green-heart.png"
-              alt="liked songs"
-            />
+            <img src="assets/icons/sidebar/liked-songs.png" alt="liked songs" />
             Liked songs</a
           >
         </li>
@@ -126,221 +120,94 @@
       </ul>
     </aside>
     <main>
-      <div class="main-wrapper">
+      <div class="main-wrapper album-wrapper">
+        <aside class="album-sidebar">
+          <img
+            class="album-main-cover"
+            src="assets/images/album-page/punk-main.png"
+            alt="daft punk"
+          />
+          <ul class="genres">
+            <li><span>Funk</span></li>
+            <li><span>Electronic music</span></li>
+            <li><span>Disco</span></li>
+            <li><span>Soft Rock</span></li>
+            <li><span>Progressive pop</span></li>
+          </ul>
+          <ul class="artists">
+            <li>
+              <a href=""
+                ><img
+                  src="assets/images/album-page/daft-punk.png"
+                  alt="daft punk"
+                /><span>Daft Punk</span></a
+              >
+            </li>
+            <li>
+              <a
+                ><img
+                  src="assets/images/album-page/pharell-williams.png"
+                  alt="pharrell williams"
+                /><span>Pharrell Williams</span></a
+              >
+            </li>
+            <li>
+              <a
+                ><img
+                  src="assets/images/album-page/Nile-Rodgers.png"
+                  alt="nile rodgers"
+                /><span>Nile Rodgers</span></a
+              >
+            </li>
+          </ul>
+        </aside>
         <section>
-          <ul class="menu-buttons-library-liked">
-            <li class="liked-add-icon">
-              <img src="assets/icons/library/library-home/add.png" alt="add" />
-            </li>
+          <h1 class="punk-title">Random Access Memories</h1>
+          <div class="memories">
+            <img src="assets/icons/album-page/album-icon.png" alt="icon" /><a
+              href=""
+              >Daft Punk</a
+            ><span
+              >&nbsp; &bull;&nbsp;2013&nbsp; &bull;&nbsp;13 songs&nbsp;
+              &bull;&nbsp;1 hr 14 min</span
+            >
+          </div>
+          <ul class="album-icons">
+            <li><img src="assets/icons/album-page/pause.png" alt="pause" /></li>
             <li>
-              <img
-                src="assets/icons/library/library-liked/list.png"
-                alt="list"
-              />
+              <img src="assets/icons/album-page/shufle.png" alt="shufle" />
             </li>
+            <li><img src="assets/icons/album-page/addd.png" alt="add" /></li>
+            <li><img src="assets/icons/album-page/queue.png" alt="queue" /></li>
             <li>
-              <img
-                src="assets/icons/library/library-liked/view.png"
-                alt="view"
-              />
+              <img src="assets/icons/album-page/download.png" alt="download" />
             </li>
-            <li>
-              <img
-                src="assets/icons/library/library-home/recent.png"
-                alt="recent"
-              /><span>Recent</span>
-            </li>
-            <li>
-              <img
-                src="assets/icons/library/library-home/group.png"
-                alt="filter"
-              /><span>Filter:All</span>
-            </li>
-            <li>
-              <img
-                src="assets/icons/library/library-home/search.png"
-                alt="search"
-              />
+            <li><img src="assets/icons/album-page/share.png" alt="share" /></li>
+            <li><img src="assets/icons/album-page/more.png" alt="more" /></li>
+            <li class="search-icon">
+              <img src="assets/icons/album-page/search.png" alt="search" />
             </li>
           </ul>
         </section>
         <section>
-          <table class="song-table">
-            <thead class="thead">
+          <table>
+            <thead>
               <tr>
-                <th class="table-number">#</th>
+                <th>#</th>
                 <th>Title</th>
-                <th>Album</th>
                 <th>Duration</th>
               </tr>
             </thead>
-
             <tbody>
               <tr>
-                <td>1</td>
-                <td>
-                  <a
-                    ><img
-                      src="assets/images/library/library-liked/daft-punk.png"
-                      alt="daft-punk"
-                  /></a>
-                  <div class="liked-song-title">
-                    <a><h3>Get Lucky</h3></a>
-                    <a>Daft Punk</a>
-                  </div>
-                </td>
-                <td>
-                  <a href="album.html"><span>Random Access Memories</span></a>
-                </td>
-                <td class="duration">
-                  <span>4:35</span>
-                  <img
-                    src="assets/icons/library/library-liked/green-heart.png"
-                    alt="green heart"
-                  />
-                </td>
+                <td class="line"></td>
+                <td class="line"></td>
+                <td class="line"></td>
               </tr>
               <tr>
-                <td>2</td>
-                <td>
-                  <a
-                    ><img
-                      src="assets/images/library/library-liked/daft-punk.png"
-                      alt="daft-punk"
-                  /></a>
-                  <div class="liked-song-title">
-                    <a> <h3>Instant Crush</h3></a>
-                    <a><span>Daft Punk,Julian Casablancas</span></a>
-                  </div>
-                </td>
-                <td>
-                  <a href="album.html"><span>Random Access Memories</span></a>
-                </td>
-                <td class="duration">
-                  <span>5:37</span
-                  ><img
-                    src="assets/icons/library/library-liked/green-heart.png"
-                    alt="green heart"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>
-                  <a
-                    ><img
-                      src="assets/images/library/library-liked/gorillaz.png"
-                      alt="gorillaz"
-                  /></a>
-                  <div class="liked-song-title">
-                    <a><h3>On Melancholy Hill</h3></a>
-                    <a> <span>Gorillaz</span></a>
-                  </div>
-                </td>
-                <td>
-                  <a><span>Plastic Beach</span></a>
-                </td>
-                <td class="duration">
-                  <span>3:53</span
-                  ><img
-                    src="assets/icons/library/library-liked/green-heart.png"
-                    alt="green heart"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>
-                  <a
-                    ><img
-                      src="assets/images/library/library-liked/soft-cell.png"
-                      alt="soft cell"
-                  /></a>
-                  <div class="liked-song-title">
-                    <a><h3>Trainted Love</h3></a> <a><span>Soft Cell</span></a>
-                  </div>
-                </td>
-                <td>
-                  <a><span>Non-Stop Erotic Cabaret</span></a>
-                </td>
-                <td class="duration">
-                  <span>2:33</span
-                  ><img
-                    src="assets/icons/library/library-liked/green-heart.png"
-                    alt="green heart"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>
-                  <a
-                    ><img
-                      src="assets/images/library/library-liked/daft-punk-one-more-time.png"
-                      alt="daft punk"
-                  /></a>
-                  <div class="liked-song-title">
-                    <a><h3>One More Time</h3></a> <a><span>Daft Punk</span></a>
-                  </div>
-                </td>
-                <td>
-                  <a><span>Discovery</span></a>
-                </td>
-                <td class="duration">
-                  <span>5:20</span
-                  ><img
-                    src="assets/icons/library/library-liked/green-heart.png"
-                    alt="green heart"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>
-                  <a
-                    ><img
-                      src="assets/images/library/library-liked/MGMT.png"
-                      alt="mgmt"
-                  /></a>
-                  <div class="liked-song-title">
-                    <a> <h3>Electric Fell</h3></a>
-                    <a> <span>MGMT</span></a>
-                  </div>
-                </td>
-                <td>
-                  <a><span>Oracular Spectacular</span></a>
-                </td>
-                <td class="duration">
-                  <span>3:49</span
-                  ><img
-                    src="assets/icons/library/library-liked/green-heart.png"
-                    alt="green heart"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>
-                  <a
-                    ><img
-                      src="assets/images/library/library-liked/daft-punk.png"
-                      alt="daft-punk"
-                  /></a>
-                  <div class="liked-song-title">
-                    <a><h3>Give Life Back to Music</h3></a>
-                    <a><span>Daft Punk</span></a>
-                  </div>
-                </td>
-                <td>
-                  <a href="album.html"><span>Random Access Memories</span></a>
-                </td>
-                <td class="duration">
-                  <span>4:35</span>
-                  <img
-                    src="assets/icons/library/library-liked/green-heart.png"
-                    alt="green heart"
-                  />
-                </td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             </tbody>
           </table>

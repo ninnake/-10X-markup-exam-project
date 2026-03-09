@@ -1,0 +1,99 @@
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/mixins.scss" as *;
+.album-sidebar {
+  width: 20vw;
+  position: fixed;
+  right: 40px;
+  top: 70px;
+  span {
+    color: $menu-text-primary;
+    font-family: $main-font;
+  }
+  ul {
+    list-style: none;
+  }
+}
+.album-wrapper {
+  background-image: linear-gradient(to bottom, #333842, #060606);
+
+  font-family: $main-font;
+}
+.album-main-cover {
+  width: 280px;
+  height: 280px;
+  transition: opacity 0.3s linear;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.genres {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  li {
+    transition: filter 0.3s linear;
+    &:hover {
+      filter: brightness(1.5);
+    }
+  }
+
+  span {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 44px;
+    border: 1px solid $menu-text-primary;
+  }
+}
+.artists {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  li {
+    a {
+      padding-top: 10px;
+      @include flex(center, flex-start, 20px);
+      font-size: 14px;
+      transition: filter 0.3s linear;
+      &:hover {
+        filter: brightness(1.5);
+      }
+    }
+  }
+}
+.punk-title {
+  color: #e0e0e0;
+  padding: 20px 20px;
+}
+.memories {
+  padding: 10px 20px;
+  color: #898989;
+  @include flex(center, flex-start, 5px);
+  a {
+    color: #e0e0e0;
+  }
+}
+.album-icons {
+  width: 60vw;
+  padding-left: 20px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  li {
+    transition: filter 0.3s linear;
+    &:hover {
+      filter: brightness(1.5);
+    }
+  }
+}
+.search-icon {
+  margin-left: auto;
+}
+
+.line {
+  height: 2px;
+  background-color: #e0e0e0;
+
+  width: 50px;
+}
