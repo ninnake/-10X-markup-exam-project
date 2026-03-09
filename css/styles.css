@@ -369,20 +369,9 @@ main {
   }
   .album-description h3 {
     padding-bottom: 10px;
-    font-size: 14px;
-    color: #e0e0e0;
-    letter-spacing: 3%;
-    font-family: "Satoshi", sans-serif;
-    font-weight: 500;
-    transition: filter 0.3s linear;
   }
   .album-description p {
-    font-size: 12px;
-    font-weight: 300;
-    color: #898989;
-    font-family: "Satoshi", sans-serif;
     width: 140px;
-    transition: filter 0.3s linear;
   }
   .list-title-line ul li:first-child,
   .list-title-line ul li:nth-child(2) {
@@ -431,6 +420,10 @@ main {
     color: #e0e0e0;
     margin-bottom: 5px;
     font-weight: 300;
+  }
+  .podcasts-foru .album-description,
+  .episodes-foru .album-description {
+    width: 140px;
   }
 }
 .player {
@@ -522,7 +515,53 @@ main {
 
 @media (max-width: 500px) {
   .player {
-    bottom: 150px;
+    background-color: #333842;
+    width: 96vw;
+    height: 60px;
+    grid-template-columns: 1fr;
+    bottom: 90px;
+    left: 2vw;
+    border-bottom: 2px solid rgba(219, 219, 219, 0.2);
+  }
+  .player::after {
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: -1px;
+    height: 2px;
+    width: 99%;
+    border-radius: 10px;
+    background: #e0e0e0;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: player-timer 120s ease forwards;
+  }
+  .audio-settings {
+    display: none;
+  }
+  #playBtn {
+    display: flex;
+    align-self: flex-start;
+  }
+  .player-last-section {
+    display: none;
+  }
+  .player-song-buttons {
+    display: none;
+  }
+  .player-song::after {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    background-image: url("../../assets/icons/player/player-add.png"), url("../../assets/icons/player/player-pause.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 40px 0;
+  }
+  @keyframes player-timer {
+    to {
+      transform: scaleX(1);
+    }
   }
 }
 .main-wrapper-for-friends {

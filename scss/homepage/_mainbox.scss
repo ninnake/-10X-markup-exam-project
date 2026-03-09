@@ -216,20 +216,9 @@ main {
 
     h3 {
       padding-bottom: 10px;
-      font-size: $font-size-primary;
-      color: $list-title-color;
-      letter-spacing: 3%;
-      font-family: $main-font;
-      font-weight: $font-weight-medium;
-      transition: filter 0.3s linear;
     }
     p {
-      font-size: $p-size;
-      font-weight: $font-weight-light;
-      color: $p-color;
-      font-family: $main-font;
       width: 140px;
-      transition: filter 0.3s linear;
     }
   }
   .list-title-line {
@@ -283,6 +272,12 @@ main {
         margin-bottom: 5px;
         font-weight: $font-weight-light;
       }
+    }
+  }
+  .podcasts-foru,
+  .episodes-foru {
+    .album-description {
+      width: 140px;
     }
   }
 }
