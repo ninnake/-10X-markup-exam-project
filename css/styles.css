@@ -337,20 +337,100 @@ main {
   padding-left: 10px;
 }
 
+.mobile-main-cataloge {
+  display: none;
+}
+
 @media (max-width: 500px) {
   main {
-    height: 100vh;
     width: 100vw;
     margin-left: 0;
     padding-top: 0;
-    background-color: #060606;
-    overflow-x: hidden;
   }
   .main-wrapper {
     width: 100%;
     margin: 0 auto;
     border: none;
-    margin-bottom: 0;
+    margin-bottom: 200px;
+  }
+  .cataloge {
+    gap: 5px;
+  }
+  .cataloge img {
+    width: 140px;
+    height: 140px;
+  }
+  .album-description {
+    padding-top: 2px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .album-description h3 {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #e0e0e0;
+    letter-spacing: 3%;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    transition: filter 0.3s linear;
+  }
+  .album-description p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #898989;
+    font-family: "Satoshi", sans-serif;
+    width: 140px;
+    transition: filter 0.3s linear;
+  }
+  .list-title-line ul li:first-child,
+  .list-title-line ul li:nth-child(2) {
+    display: none;
+  }
+  .all-active {
+    display: none;
+  }
+  .menu-buttons {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .menu-buttons a {
+    background-color: #111111;
+    font-size: 12px;
+  }
+  .mobile-main-cataloge {
+    display: grid;
+    margin: 70px 20px 20px 20px;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    gap: 10px;
+  }
+  .mobile-main-cataloge li {
+    padding: 5px 5px;
+    background-color: #202020;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    font-family: "Satoshi", sans-serif;
+    align-items: center;
+    font-size: 14px;
+  }
+  .mobile-main-cataloge li img {
+    width: 43px;
+    height: 43px;
+    border-radius: 3px;
+  }
+  .mobile-main-cataloge li span {
+    color: #898989;
+    font-weight: 300;
+  }
+  .mobile-main-cataloge li h5 {
+    color: #e0e0e0;
+    margin-bottom: 5px;
+    font-weight: 300;
   }
 }
 .player {

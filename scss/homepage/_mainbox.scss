@@ -182,20 +182,107 @@ main {
     }
   }
 }
+.mobile-main-cataloge {
+  display: none;
+}
 @media (max-width: 500px) {
   main {
-    height: 100vh;
     width: 100vw;
     margin-left: 0;
     padding-top: 0;
-    background-color: $bg-main;
-    overflow-x: hidden;
   }
   .main-wrapper {
     width: 100%;
     margin: 0 auto;
 
     border: none;
-    margin-bottom: 0;
+
+    margin-bottom: 200px;
+  }
+  .cataloge {
+    gap: 5px;
+
+    img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  .album-description {
+    padding-top: 2px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h3 {
+      padding-bottom: 10px;
+      font-size: $font-size-primary;
+      color: $list-title-color;
+      letter-spacing: 3%;
+      font-family: $main-font;
+      font-weight: $font-weight-medium;
+      transition: filter 0.3s linear;
+    }
+    p {
+      font-size: $p-size;
+      font-weight: $font-weight-light;
+      color: $p-color;
+      font-family: $main-font;
+      width: 140px;
+      transition: filter 0.3s linear;
+    }
+  }
+  .list-title-line {
+    ul {
+      li:first-child,
+      li:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+  .all-active {
+    display: none;
+  }
+  .menu-buttons {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    a {
+      background-color: $hover-background-color;
+      font-size: 12px;
+    }
+  }
+  .mobile-main-cataloge {
+    display: grid;
+    margin: 70px 20px 20px 20px;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    gap: 10px;
+    li {
+      padding: 5px 5px;
+      background-color: #202020;
+      border-radius: 10px;
+      display: flex;
+      gap: 10px;
+      font-family: $main-font;
+      align-items: center;
+      font-size: 14px;
+
+      img {
+        width: 43px;
+        height: 43px;
+        border-radius: 3px;
+      }
+      span {
+        color: #898989;
+        font-weight: $font-weight-light;
+      }
+      h5 {
+        color: #e0e0e0;
+        margin-bottom: 5px;
+        font-weight: $font-weight-light;
+      }
+    }
   }
 }
