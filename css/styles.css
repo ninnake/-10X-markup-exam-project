@@ -1373,8 +1373,12 @@ main {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   overflow-y: hidden;
+  scrollbar-width: none;
 }
 
+.artist-home {
+  width: 100vw;
+}
 .artist-home h2 {
   color: #e0e0e0;
   padding: 30px 0;
@@ -1416,8 +1420,8 @@ main {
 }
 
 .artist-pick {
-  width: 30vw;
-  padding-left: 10vw;
+  width: 40vw;
+  margin-left: 10vw;
 }
 .artist-pick ul {
   list-style: none;
@@ -1471,29 +1475,32 @@ main {
 }
 
 .artist-about {
-  width: 100vw;
+  width: 85vw;
 }
 .artist-about ul {
   display: flex;
   list-style: none;
 }
 .artist-about .about-text {
-  width: 50vw;
+  width: 45vw;
 }
 .artist-about .about-text p {
   width: 40vw;
   font-family: "Satoshi", sans-serif;
   color: #e0e0e0;
-  margin: 20px 50px;
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
 
 .about-icon {
-  margin: 20px 50px;
-  width: 10vw;
+  padding-top: 20px;
+  padding-left: 5vw;
+  width: 25vw;
 }
 
 .about-statistic {
-  width: 15vw;
+  width: 30vw;
+  padding-left: 10vw;
 }
 .about-statistic ul {
   margin: 20px auto;
@@ -1519,8 +1526,98 @@ main {
   color: #898989;
 }
 
-.test {
-  width: 100vw;
+.artist-album-icons {
+  padding-left: 30px;
+  width: 83vw;
+}
+.artist-album-icons input[type=radio] {
+  display: none;
+}
+.artist-album-icons .btn {
+  cursor: pointer;
+  transition: filter 0.3s linear;
+}
+.artist-album-icons .btn:hover {
+  filter: brightness(1.5);
+}
+
+.artist-albums {
+  height: 500px;
+  width: 85vw;
+}
+.artist-albums .list-view {
+  display: none;
+}
+.artist-albums ul {
+  padding: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+.artist-albums ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+  transition: opacity 0.3s linear;
+}
+.artist-albums ul li:hover img {
+  opacity: 0.6;
+}
+.artist-albums ul li:hover span {
+  filter: brightness(1.5);
+}
+.artist-albums ul li h5 {
+  font-size: 14px;
+  color: #e0e0e0;
+  font-family: "Satoshi", sans-serif;
+}
+.artist-albums ul li span {
+  transition: filter 0.3s linear;
+  font-family: "Satoshi", sans-serif;
+  color: #898989;
+  font-size: 14px;
+}
+.artist-albums ul img {
+  border-radius: 7px;
+  width: 170px;
+  height: 170px;
+  transition: opacity 0.3s linear;
+}
+
+#list:checked ~ .artist-albums {
+  width: 85vw;
+}
+#list:checked ~ .artist-albums ul {
+  display: flex;
+  flex-direction: column;
+}
+#list:checked ~ .artist-albums ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80vw;
+  border-bottom: 1px solid #111111;
+}
+#list:checked ~ .artist-albums .list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#list:checked ~ .artist-albums .list-view h5 {
+  font-size: 20px;
+}
+#list:checked ~ .artist-albums .list-view .list-view-buttons img {
+  width: 40px;
+  height: 40px;
+}
+#list:checked ~ .artist-albums .list-view .list-view-buttons {
+  display: flex;
+  gap: 10px;
+}
+#list:checked ~ .artist-albums .grid-view {
+  display: none;
 }
 
 * {
