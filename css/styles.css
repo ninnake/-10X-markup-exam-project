@@ -915,6 +915,17 @@ main {
 }
 .song-table span {
   color: #898989;
+  transition: filter 0.2s linear;
+}
+.song-table span:hover {
+  filter: brightness(0.5);
+}
+.song-table a {
+  color: #898989;
+  transition: filter 0.2s linear;
+}
+.song-table a:hover {
+  filter: brightness(0.5);
 }
 .song-table img {
   border-radius: 5px;
@@ -1231,10 +1242,40 @@ main {
   margin-left: auto;
 }
 
-.line {
-  height: 2px;
+.line td {
+  height: 1px;
   background-color: #e0e0e0;
-  width: 50px;
+  padding: 0 0;
+}
+
+.album-table {
+  color: #898989;
+  font-family: "Satoshi", sans-serif;
+  width: 60vw;
+  padding-left: 20px;
+}
+.album-table th,
+.album-table td {
+  padding: 0 10px;
+  text-align: left;
+}
+.album-table .album-song-title a:first-child {
+  color: #e0e0e0;
+}
+.album-table .album-song-title a:last-child {
+  color: #898989;
+}
+.album-table .album-song-title a {
+  transition: filter 0.2s linear;
+}
+.album-table .album-song-title a:hover {
+  filter: brightness(0.5);
+}
+.album-table .duration img {
+  transition: filter 0.2s linear;
+}
+.album-table .duration img:hover {
+  filter: brightness(1.5);
 }
 
 * {

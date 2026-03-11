@@ -90,10 +90,44 @@
 .search-icon {
   margin-left: auto;
 }
-
 .line {
-  height: 2px;
-  background-color: #e0e0e0;
+  td {
+    height: 1px;
+    background-color: #e0e0e0;
+    padding: 0 0;
+  }
+}
+.album-table {
+  color: $main-color-library-liked;
+  font-family: $main-font;
+  width: 60vw;
+  padding-left: 20px;
 
-  width: 50px;
+  th,
+  td {
+    padding: 0 10px;
+    text-align: left;
+  }
+  .album-song-title {
+    a:first-child {
+      color: #e0e0e0;
+    }
+    a:last-child {
+      color: $main-color-library-liked;
+    }
+    a {
+      transition: filter 0.2s linear;
+    }
+    a:hover {
+      filter: brightness(0.5);
+    }
+  }
+  .duration {
+    img {
+      transition: filter 0.2s linear;
+      &:hover {
+        filter: brightness(1.5);
+      }
+    }
+  }
 }

@@ -33,6 +33,17 @@
   font-family: $main-font;
   span {
     color: $main-color-library-liked;
+    transition: filter 0.2s linear;
+    &:hover {
+      filter: brightness(0.5);
+    }
+  }
+  a {
+    color: $main-color-library-liked;
+    transition: filter 0.2s linear;
+    &:hover {
+      filter: brightness(0.5);
+    }
   }
   img {
     border-radius: 5px;
