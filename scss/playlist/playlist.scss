@@ -1,0 +1,20 @@
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/mixins.scss" as *;
+.playlist-wrapper {
+  background-image: linear-gradient(to bottom, rgba(#3b4fb6, 0.5), #060606);
+
+  font-family: $main-font;
+  table {
+    h3 {
+      color: #e0e0e0;
+    }
+    .playlist-line {
+      td {
+        height: 1px;
+
+        background-color: #898989;
+        padding: 0 0;
+      }
+    }
+  }
+}

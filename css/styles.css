@@ -1179,6 +1179,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   row-gap: 10px;
+  gap: 10px;
 }
 .genres li {
   transition: filter 0.3s linear;
@@ -1618,6 +1619,19 @@ main {
 }
 #list:checked ~ .artist-albums .grid-view {
   display: none;
+}
+
+.playlist-wrapper {
+  background-image: linear-gradient(to bottom, rgba(59, 79, 182, 0.5), #060606);
+  font-family: "Satoshi", sans-serif;
+}
+.playlist-wrapper table h3 {
+  color: #e0e0e0;
+}
+.playlist-wrapper table .playlist-line td {
+  height: 1px;
+  background-color: #898989;
+  padding: 0 0;
 }
 
 * {
