@@ -84,10 +84,6 @@
 
   .artist-menu-section {
     scroll-snap-align: start;
-
-    .test {
-      width: 1200px;
-    }
   }
 }
 .artist-sections-wrapper {
@@ -191,4 +187,54 @@
       }
     }
   }
+}
+.artist-about {
+  width: 100vw;
+  ul {
+    display: flex;
+
+    list-style: none;
+  }
+  .about-text {
+    width: 50vw;
+    p {
+      width: 40vw;
+      font-family: $main-font;
+      color: #e0e0e0;
+      margin: 20px 50px;
+    }
+  }
+}
+.about-icon {
+  margin: 20px 50px;
+  width: 10vw;
+}
+.about-statistic {
+  width: 15vw;
+  ul {
+    margin: 20px auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-family: $main-font;
+    color: #e0e0e0;
+    li {
+      padding-bottom: 20px;
+    }
+    h3 {
+      font-size: 30px;
+      padding-bottom: 5px;
+    }
+    h5 {
+      font-size: 18px;
+      padding-bottom: 5px;
+    }
+    span {
+      font-size: 12px;
+      color: #898989;
+    }
+  }
+}
+.test {
+  width: 100vw;
 }
