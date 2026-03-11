@@ -705,6 +705,9 @@ main {
   padding-right: 20px;
 }
 
+.research-cataloge a {
+  color: #e0e0e0;
+}
 .research-cataloge {
   padding-left: 20px;
   display: flex;

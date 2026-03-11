@@ -94,6 +94,9 @@
   }
 }
 .research-cataloge {
+  a {
+    color: $menu-text-hover;
+  }
   padding-left: 20px;
   display: flex;
   list-style: none;
