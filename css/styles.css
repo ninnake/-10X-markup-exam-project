@@ -257,6 +257,56 @@ main {
   transition: opacity 0.3s linear;
 }
 
+.home-wrapper .cataloge .color-box {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+  z-index: 2;
+}
+.home-wrapper .cataloge .color-box img {
+  position: relative;
+  z-index: 3;
+}
+.home-wrapper .cataloge .color-box::after {
+  position: absolute;
+  content: "50";
+  bottom: -23px;
+  right: 15px;
+  color: var(--card-color);
+  font-family: "Satoshi", sans-serif;
+}
+.home-wrapper .cataloge .color-box::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+  border-radius: 5px;
+  background: var(--card-color);
+  box-shadow: inset 1px 1px 10px black;
+  z-index: 1;
+}
+.home-wrapper .cataloge .color-box .for-layer {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+}
+.home-wrapper .cataloge .color-box .for-layer::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10%;
+  width: 80%;
+  height: 100%;
+  border-radius: 5px;
+  background: var(--card-color);
+  box-shadow: inset 1px 1px 10px black;
+  z-index: 0;
+}
+
 .album-description {
   padding-top: 5px;
   height: 60px;
@@ -288,7 +338,7 @@ main {
 }
 
 .cataloge li:hover img {
-  opacity: 0.7;
+  filter: brightness(0.8);
 }
 .cataloge li:hover p,
 .cataloge li:hover h3 {
@@ -325,6 +375,11 @@ main {
   padding-left: 10px;
 }
 
+.episodes-foru .cataloge .episode-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
 .episodes-foru .cataloge li:first-child div {
   background-color: rgba(133, 197, 133, 0.05);
   border-radius: 5px;
@@ -350,6 +405,14 @@ main {
     width: 100vw;
     margin-left: 0;
     padding-top: 0;
+  }
+  .home-wrapper .cataloge .color-box {
+    width: 140px;
+    height: 140px;
+  }
+  .home-wrapper .cataloge .color-box .for-layer {
+    width: 140px;
+    height: 140px;
   }
   .main-wrapper {
     width: 100%;
@@ -647,17 +710,17 @@ main {
   font-size: 18px;
 }
 
-.cataloge .color-box {
+.search-wrapper .cataloge .color-box {
   border-radius: 10px;
 }
-.cataloge .color-box div {
+.search-wrapper .cataloge .color-box div {
   overflow: hidden;
   width: 170px;
   height: 170px;
   border-radius: 10px;
   position: relative;
 }
-.cataloge .color-box div h3 {
+.search-wrapper .cataloge .color-box div h3 {
   position: absolute;
   z-index: 10;
   font-size: 20px;
@@ -670,7 +733,7 @@ main {
   padding: 0 0;
   transition: background-color 0.3s linear, margin 0.3s linear, top 0.3s linear;
 }
-.cataloge .color-box div img {
+.search-wrapper .cataloge .color-box div img {
   z-index: 1;
   border-radius: 5px;
   width: 100px;
@@ -681,7 +744,7 @@ main {
   right: -10px;
   transition: rotate 0.3s linear, width 0.3s linear, height 0.3s linear, bottom 0.3s linear, right 0.3s linear, border-radius 0.3s linear;
 }
-.cataloge .color-box div:hover img {
+.search-wrapper .cataloge .color-box div:hover img {
   rotate: 0deg;
   width: 174px;
   height: 174px;
@@ -690,7 +753,7 @@ main {
   border-radius: 10px;
   opacity: 1;
 }
-.cataloge .color-box div:hover h3 {
+.search-wrapper .cataloge .color-box div:hover h3 {
   width: 170px;
   height: 60px;
   padding: 5px 2px;

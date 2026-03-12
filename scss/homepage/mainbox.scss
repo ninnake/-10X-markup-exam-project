@@ -80,6 +80,59 @@ main {
     transition: opacity 0.3s linear;
   }
 }
+.home-wrapper {
+  .cataloge {
+    .color-box {
+      position: relative;
+      width: 170px;
+      height: 170px;
+      border-radius: 5px;
+      z-index: 2;
+      img {
+        position: relative;
+        z-index: 3;
+      }
+      &::after {
+        position: absolute;
+        content: "50";
+        bottom: -23px;
+        right: 15px;
+        color: var(--card-color);
+        font-family: $main-font;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 5%;
+        width: 90%;
+        height: 100%;
+        border-radius: 5px;
+        background: var(--card-color);
+        box-shadow: inset 1px 1px 10px black;
+        z-index: 1;
+      }
+      .for-layer {
+        position: relative;
+        width: 170px;
+        height: 170px;
+        border-radius: 5px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: -10px;
+          left: 10%;
+          width: 80%;
+          height: 100%;
+          border-radius: 5px;
+          background: var(--card-color);
+          box-shadow: inset 1px 1px 10px black;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
 .album-description {
   padding-top: 5px;
   height: 60px;
@@ -114,7 +167,7 @@ main {
 .cataloge {
   li:hover {
     img {
-      opacity: 0.7;
+      filter: brightness(0.8);
     }
     p,
     h3 {
@@ -159,6 +212,11 @@ main {
 }
 .episodes-foru {
   .cataloge {
+    .episode-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
     li:first-child {
       div {
         @include episodes-box(#85c585);
@@ -179,11 +237,25 @@ main {
 .mobile-main-cataloge {
   display: none;
 }
+
 @media (max-width: 500px) {
   main {
     width: 100vw;
     margin-left: 0;
     padding-top: 0;
+  }
+  .home-wrapper {
+    .cataloge {
+      .color-box {
+        width: 140px;
+        height: 140px;
+
+        .for-layer {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    }
   }
   .main-wrapper {
     width: 100%;
