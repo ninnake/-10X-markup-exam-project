@@ -86,6 +86,9 @@
     justify-content: space-between;
     font-family: $main-font;
     color: $list-title-color;
+    h2 {
+      color: $list-title-color;
+    }
     .spotify-title {
       color: $list-title-color;
     }
