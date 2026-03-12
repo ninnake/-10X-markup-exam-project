@@ -1,0 +1,149 @@
+@use "../abstracts/variables.scss" as *;
+@use "../abstracts/mixins.scss" as *;
+.podcast-wrapper {
+  background: linear-gradient(
+    to bottom,
+    rgba(#a5602a, 0.47),
+    rgba(#060606, 0.47)
+  );
+  .album-sidebar {
+    font-family: $main-font;
+    h4 {
+      color: $list-title-color;
+      padding: 20px 0;
+    }
+    p {
+      color: $menu-text-primary;
+      padding-bottom: 20px;
+    }
+    .genres {
+      span {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+.podcast-header {
+  font-family: $main-font;
+  padding: 20px 20px;
+  .rogan-title {
+    font-size: 36px;
+    color: $list-title-color;
+    letter-spacing: 3%;
+    padding-bottom: 20px;
+  }
+  span {
+    color: $list-title-color;
+  }
+  .rogan-buttons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    span {
+      padding: 10px 20px;
+      border: 1px solid $ft-color;
+      border-radius: 44px;
+      transition: background-color 0.3s linear;
+      font-size: 14px;
+      &:hover {
+        background-color: rgba(#898989, 0.25);
+      }
+    }
+    .podcast-listeners {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 20px;
+    }
+  }
+}
+.all-episodes {
+  padding: 20px 20px;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $main-font;
+  h3 {
+    font-size: 20px;
+    color: $list-title-color;
+  }
+  &-buttons {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: $p-color;
+      transition: filter 0.3s linear;
+      &:hover {
+        filter: brightness(1.5);
+      }
+    }
+  }
+}
+.episodes-list {
+  list-style: none;
+  padding: 20px 20px;
+  .episode {
+    width: 60vw;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid $p-color;
+    &:hover {
+      .full-p {
+        display: flex;
+      }
+      .part-p {
+        display: none;
+      }
+    }
+
+    &-description {
+      font-family: $main-font;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      list-style: none;
+      gap: 15px;
+      h3 {
+        color: $list-title-color;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        letter-spacing: 2%;
+        font-weight: $font-weight-medium;
+      }
+      p {
+        color: $p-color;
+        width: 80%;
+      }
+      .full-p {
+        display: none;
+        transition: display 0.3s linear;
+      }
+
+      &-buttons {
+        width: 30vw;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        img {
+          transition: filter 0.2s linear;
+          &:hover {
+            filter: brightness(1.3);
+          }
+        }
+      }
+    }
+  }
+}
