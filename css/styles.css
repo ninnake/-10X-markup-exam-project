@@ -768,21 +768,21 @@ main {
   .resent-searches {
     display: none;
   }
-  .cataloge {
+  .search-wrapper .cataloge {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .cataloge .color-box {
+  .search-wrapper .cataloge .color-box {
     border-radius: 10px;
   }
-  .cataloge .color-box div {
+  .search-wrapper .cataloge .color-box div {
     width: 100%;
     height: 100px;
   }
-  .cataloge .color-box div h3 {
+  .search-wrapper .cataloge .color-box div h3 {
     width: 75%;
   }
-  .cataloge .color-box div img {
+  .search-wrapper .cataloge .color-box div img {
     width: 100px;
     height: 100px;
     bottom: -30px;
@@ -1915,11 +1915,45 @@ main {
   filter: brightness(1.3);
 }
 
+.episodes-header .episode-buttons {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+.episodes-header .episode-buttons img {
+  transition: filter 0.2s linear;
+}
+.episodes-header .episode-buttons img:hover {
+  filter: brightness(1.3);
+}
+.episodes-header .episodes-title {
+  display: flex;
+  align-items: center;
+  color: #898989;
+}
+.episodes-header .episodes-title p {
+  color: #e0e0e0;
+}
+
+.episode-video {
+  width: 60vw;
+  padding-bottom: 100px;
+}
+.episode-video iframe {
+  padding: 50px 100px;
+  width: 100%;
+  height: 550px;
+  border: none;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+}
+* ul {
+  list-style: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
