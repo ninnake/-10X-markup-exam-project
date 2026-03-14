@@ -1994,7 +1994,7 @@ main {
   align-items: center;
   color: #898989;
 }
-.episodes-header .episodes-title p {
+.episodes-header .episodes-title .white {
   color: #e0e0e0;
 }
 
