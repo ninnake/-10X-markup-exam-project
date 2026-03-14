@@ -515,7 +515,7 @@ main {
   filter: brightness(1.5);
 }
 .player.active #playBtn img {
-  content: url("assets/icons/player/player-go.png");
+  content: url("../../assets/icons/player/player-go.png");
 }
 .player button {
   background-color: #202020;
