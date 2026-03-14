@@ -52,39 +52,20 @@ header {
 
 .home:hover {
   img {
-    content: url("/assets/icons/header/hovers/home.png");
+    content: url("../../assets/icons/header/hovers/home.png");
   }
 }
 .discover:hover {
   img {
-    content: url("/assets/icons/header/hovers/discover.png");
+    content: url("../../assets/icons/header/hovers/discover.png");
   }
 }
 .search:hover {
   img {
-    content: url("/assets/icons/header/hovers/search.png");
+    content: url("../../assets/icons/header/hovers/search.png");
   }
 }
-//selected icon changes
 
-.home.selected {
-  @include hover-selected-style;
-  img {
-    content: url("/assets/icons/header/selected/home.png");
-  }
-}
-.discover.selected {
-  @include hover-selected-style;
-  img {
-    content: url("/assets/icons/header/selected/discover.png");
-  }
-}
-.search.selected {
-  @include hover-selected-style;
-  img {
-    content: url("/assets/icons/header/selected/search.png");
-  }
-}
 .top-buttons {
   grid-area: 1/3/2/4;
   display: flex;

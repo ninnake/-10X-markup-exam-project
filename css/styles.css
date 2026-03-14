@@ -39,39 +39,15 @@ header a:hover {
 }
 
 .home:hover img {
-  content: url("/assets/icons/header/hovers/home.png");
+  content: url("../../assets/icons/header/hovers/home.png");
 }
 
 .discover:hover img {
-  content: url("/assets/icons/header/hovers/discover.png");
+  content: url("../../assets/icons/header/hovers/discover.png");
 }
 
 .search:hover img {
-  content: url("/assets/icons/header/hovers/search.png");
-}
-
-.home.selected {
-  color: #e0e0e0;
-  background-color: #111111;
-}
-.home.selected img {
-  content: url("/assets/icons/header/selected/home.png");
-}
-
-.discover.selected {
-  color: #e0e0e0;
-  background-color: #111111;
-}
-.discover.selected img {
-  content: url("/assets/icons/header/selected/discover.png");
-}
-
-.search.selected {
-  color: #e0e0e0;
-  background-color: #111111;
-}
-.search.selected img {
-  content: url("/assets/icons/header/selected/search.png");
+  content: url("../../assets/icons/header/hovers/search.png");
 }
 
 .top-buttons {
