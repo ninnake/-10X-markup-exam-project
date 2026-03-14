@@ -21,7 +21,9 @@ header a {
   padding-left: 15px;
   padding-right: 80px;
   border-radius: 5px;
-  transition: background-color 0.3s linear, color 0.3s linear;
+  transition:
+    background-color 0.3s linear,
+    color 0.3s linear;
 }
 header a:hover {
   background-color: #111111;
@@ -177,7 +179,9 @@ main {
   color: #e0e0e0;
   padding: 8px 15px;
   border-radius: 8px;
-  transition: background-color 0.3s linear, color 0.3s linear;
+  transition:
+    background-color 0.3s linear,
+    color 0.3s linear;
 }
 .menu-buttons a:hover {
   background-color: #e0e0e0;
@@ -491,7 +495,7 @@ main {
   filter: brightness(1.5);
 }
 .player.active #playBtn img {
-  content: url("../../assets/icons/player/player-go.png");
+  content: url("../assets/icons/player/player-go.png");
 }
 .player button {
   background-color: #202020;
@@ -597,9 +601,13 @@ main {
     display: inline-block;
     width: 90px;
     height: 40px;
-    background-image: url("../../assets/icons/player/player-add.png"), url("../../assets/icons/player/player-pause.png");
+    background-image:
+      url("../../assets/icons/player/player-add.png"),
+      url("../../assets/icons/player/player-pause.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: 0 0, 40px 0;
+    background-position:
+      0 0,
+      40px 0;
   }
   @keyframes player-timer {
     to {
@@ -707,7 +715,10 @@ main {
   top: 20px;
   margin: 0 20px;
   padding: 0 0;
-  transition: background-color 0.3s linear, margin 0.3s linear, top 0.3s linear;
+  transition:
+    background-color 0.3s linear,
+    margin 0.3s linear,
+    top 0.3s linear;
 }
 .search-wrapper .cataloge .color-box div img {
   z-index: 1;
@@ -718,7 +729,13 @@ main {
   position: absolute;
   bottom: -20px;
   right: -10px;
-  transition: rotate 0.3s linear, width 0.3s linear, height 0.3s linear, bottom 0.3s linear, right 0.3s linear, border-radius 0.3s linear;
+  transition:
+    rotate 0.3s linear,
+    width 0.3s linear,
+    height 0.3s linear,
+    bottom 0.3s linear,
+    right 0.3s linear,
+    border-radius 0.3s linear;
 }
 .search-wrapper .cataloge .color-box div:hover img {
   rotate: 0deg;
@@ -733,7 +750,12 @@ main {
   width: 170px;
   height: 60px;
   padding: 5px 2px;
-  background: linear-gradient(to right, var(--card-color), var(--card-color), rgba(255, 255, 255, 0.01));
+  background: linear-gradient(
+    to right,
+    var(--card-color),
+    var(--card-color),
+    rgba(255, 255, 255, 0.01)
+  );
   opacity: 0.8;
   filter: none;
   top: 110px;
@@ -829,7 +851,8 @@ main {
     transition: none;
   }
 }
-.menu-buttons-library, .menu-buttons-library-liked {
+.menu-buttons-library,
+.menu-buttons-library-liked {
   padding: 20px 20px;
   display: flex;
   list-style: none;
@@ -837,20 +860,24 @@ main {
   justify-content: flex-start;
   gap: 20px;
 }
-.menu-buttons-library li, .menu-buttons-library-liked li {
+.menu-buttons-library li,
+.menu-buttons-library-liked li {
   display: flex;
   align-items: center;
   transition: filter 0.3s linear;
 }
-.menu-buttons-library li:hover, .menu-buttons-library-liked li:hover {
+.menu-buttons-library li:hover,
+.menu-buttons-library-liked li:hover {
   filter: brightness(1.5);
 }
-.menu-buttons-library span, .menu-buttons-library-liked span {
+.menu-buttons-library span,
+.menu-buttons-library-liked span {
   color: #898989;
   font-size: 14px;
   font-family: "Satoshi", sans-serif;
 }
-.menu-buttons-library .add-icon, .menu-buttons-library-liked .add-icon {
+.menu-buttons-library .add-icon,
+.menu-buttons-library-liked .add-icon {
   margin-left: auto;
 }
 
@@ -971,7 +998,9 @@ main {
 }
 .song-table img {
   border-radius: 5px;
-  transition: filter 0.3s linear, opacity 0.3s linear;
+  transition:
+    filter 0.3s linear,
+    opacity 0.3s linear;
 }
 .song-table img:hover {
   filter: brightness(1.5);
@@ -1006,7 +1035,13 @@ main {
 }
 
 .wrapper-for-discover {
-  background: linear-gradient(to bottom, rgba(140, 216, 204, 0.14), rgba(149, 17, 190, 0.14), rgba(255, 82, 2, 0.14), rgba(36, 40, 97, 0.14));
+  background: linear-gradient(
+    to bottom,
+    rgba(140, 216, 204, 0.14),
+    rgba(149, 17, 190, 0.14),
+    rgba(255, 82, 2, 0.14),
+    rgba(36, 40, 97, 0.14)
+  );
 }
 
 .music-active a {
@@ -1049,7 +1084,9 @@ main {
   gap: 300px;
 }
 .theme-arrows img {
-  transition: filter 0.3s linear, transform 0.3s linear;
+  transition:
+    filter 0.3s linear,
+    transform 0.3s linear;
 }
 .theme-arrows img:hover {
   filter: brightness(1.5);
@@ -1573,7 +1610,7 @@ main {
   padding-left: 30px;
   width: 83vw;
 }
-.artist-album-icons input[type=radio] {
+.artist-album-icons input[type="radio"] {
   display: none;
 }
 .artist-album-icons .btn {
@@ -1804,7 +1841,9 @@ main {
   font-size: 15px;
   font-weight: 500;
   color: #898989;
-  transition: color 0.3s linear, border-bottom 0.3s linear;
+  transition:
+    color 0.3s linear,
+    border-bottom 0.3s linear;
   padding-bottom: 21px;
   border-bottom: 2px solid #898989;
 }
@@ -1814,7 +1853,11 @@ main {
 }
 
 .podcast-wrapper {
-  background: linear-gradient(to bottom, rgba(165, 96, 42, 0.47), rgba(6, 6, 6, 0.47));
+  background: linear-gradient(
+    to bottom,
+    rgba(165, 96, 42, 0.47),
+    rgba(6, 6, 6, 0.47)
+  );
 }
 .podcast-wrapper .album-sidebar {
   font-family: "Satoshi", sans-serif;
