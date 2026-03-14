@@ -41,15 +41,15 @@ header a:hover {
 }
 
 .home:hover img {
-  content: url("../../assets/icons/header/hovers/home.png");
+  content: url("../assets/icons/header/hovers/home.png");
 }
 
 .discover:hover img {
-  content: url("../../assets/icons/header/hovers/discover.png");
+  content: url("../assets/icons/header/hovers/discover.png");
 }
 
 .search:hover img {
-  content: url("../../assets/icons/header/hovers/search.png");
+  content: url("../assets/icons/header/hovers/search.png");
 }
 
 .top-buttons {
@@ -69,7 +69,7 @@ header a:hover {
   padding: 0 0;
 }
 .top-buttons .friends:hover img {
-  content: url("/assets/icons/header/selected/friends.png");
+  content: url("../assets/icons/header/selected/friends.png");
 }
 .top-buttons .friends:hover a {
   background-color: #060606;
@@ -132,7 +132,7 @@ header a:hover {
 }
 
 .sidebar-wrapper:hover .library img {
-  content: url("/assets/icons/header/hovers/library.png");
+  content: url("../assets/icons/header/hovers/library.png");
 }
 .sidebar-wrapper:hover {
   background-color: #111111;
@@ -602,8 +602,8 @@ main {
     width: 90px;
     height: 40px;
     background-image:
-      url("../../assets/icons/player/player-add.png"),
-      url("../../assets/icons/player/player-pause.png");
+      url("../assets/icons/player/player-add.png"),
+      url("../assets/icons/player/player-pause.png");
     background-repeat: no-repeat, no-repeat;
     background-position:
       0 0,
